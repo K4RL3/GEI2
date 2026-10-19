@@ -34,6 +34,9 @@ public class MoverPinguino : MonoBehaviour
             }
         }
 
-        
+        if (Keyboard.current.bKey.wasPressedThisFrame)
+        {
+            pinguino.Bailar();
+        }
     }
 }
